@@ -178,9 +178,14 @@ function getFlags(){
                                 $('body').on('click','.radioBtn',function(){
                                     var countryClicked=$(this).attr('value');
                                     var idParent=$(this).parent().parent().attr('id');
+                                    var cardNumber=idParent.split('-')[1];
+                                    cardNumber=parseInt(cardNumber);
 
-                                console.log('clicked country '+countryClicked);
-                                console.log('parent id '+idParent);
+                                    console.log('pais clickeado '+countryClicked);
+
+                                    console.log('parent id '+idParent);
+                                    console.log('numero carta '+cardNumber);
+
 
                                 });
 
