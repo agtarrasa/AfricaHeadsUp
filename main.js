@@ -88,6 +88,34 @@ function getFlags(){
                     }
                     return options;
                     }
+                    function addOptions(cardNumber){
+                        var htmlClon='';
+                        var card=$('.card').eq(cardNumber);
+                        if($('.card').eq(cardNumber).find('div').length==0){
+                        var hijo=card.find('img').eq(0);
+                        var flag=hijo.attr('src');
+                        hijo.css('visibility','hidden');
+                        flagoptns=$('#flagOptions');
+                        flagoptns=flagoptns.clone();
+
+                        flagoptns.attr('class','front-face');
+                        flagoptns.attr('id','optionscard-'+cardNumber);
+                        flagoptns.css('background-image','url('+flag+')');
+
+                        flagoptns.css('background-repeat','no repeat');
+                        flagoptns.css('height','205px');
+                        flagoptns.css('background-size','100% 100%');
+
+                        flagoptns.css('display','flex');
+                        flagoptns.css('flex-direction','column');
+                        flagoptns.css('justify-content','space-between');
+
+                        console.log(htmlClon);
+                        console.log('Flag Options'+flagoptns.get(0).outerHTML);
+                        card.append(flagoptns.get(0).outerHTML);
+
+                        }
+                        }
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
