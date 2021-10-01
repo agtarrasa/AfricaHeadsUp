@@ -66,6 +66,10 @@ function getFlags(){
                         $('#'+'optionscard-'+cardNumber).find('label').eq(0).html(fitSaoTome(tmpOptions[0]));
                         $('#'+'optionscard-'+cardNumber).find('label').eq(1).html(fitSaoTome(tmpOptions[1]));
                         $('#'+'optionscard-'+cardNumber).find('label').eq(2).html(fitSaoTome(tmpOptions[2]));
+                        
+                        $('#'+'optionscard-'+cardNumber).find('input').eq(0).attr('value',tmpOptions[0]);                
+                        $('#'+'optionscard-'+cardNumber).find('input').eq(1).attr('value',tmpOptions[1]);                
+                        $('#'+'optionscard-'+cardNumber).find('input').eq(2).attr('value',tmpOptions[2]);   
 
                     
 
