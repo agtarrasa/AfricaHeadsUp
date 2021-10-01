@@ -204,6 +204,17 @@ function getFlags(){
                                            for(i=0;i<12;i++){errors.push(0);}
                                             return errors;
                                         }
+                                        function twoErrors(errorVector){
+                                            var i=0;
+                                            var err0rs=false;
+                                            for(i=0;i<12;i++){
+                                            if(errorVector[i]==2){
+                                                err0rs=true;
+                                            break;
+                                            }
+                                        }
+                                    return err0rs;
+                                    }
                                
 
 
