@@ -66,6 +66,29 @@ function getFlags(){
                 }
                 return positions;
                 }
+                function optionMatrix(theFlags){
+                    var options=[];
+                    var opInt=[];
+                    var positions='',flag='';
+                    var i=0,j=0;
+                    for(i=0;i<12;i++){
+                    positions=generate2Random();
+                    while(positions.includes(thePositions[i])){
+                    positions=generate2Random();
+                    }
+                    opInt=[];
+                    for(j=0;j<2;j++){
+                    flag=theFlags[positions[j]].
+                    replace(document.URL,'').replace('img/flags/Flag_of_','').
+                    replace('.png','');
+
+                    opInt.push(flag);
+                    }
+                    options.push(opInt);
+                    }
+                    return options;
+                    }
+
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
