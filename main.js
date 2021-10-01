@@ -45,10 +45,15 @@ function getFlags(){
                 if(getRotated()==0){
                     console.log('rotate this card');
                     chosenCountry=$(this).find('img').attr('id');
-                    console.log('pais elegido '+chosenCountry);
+                    console.log('picked country '+chosenCountry);
                     $(this).addClass('rotate');
                     cardNumber=parseInt(chosenCountry.split('-')[1]);
-                    console.log('numero carta '+cardNumber);
+                    console.log('number card '+cardNumber);
+                    if(theOptions[cardNumber].length<3){
+                        theOptions[cardNumber].push(chosenCountry.split('-')[0]);
+
+                        }
+                    
 
 
 
