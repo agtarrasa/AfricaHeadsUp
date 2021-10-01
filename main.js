@@ -140,6 +140,19 @@ function getFlags(){
                                 $('.correctNotCorrect').eq(1).text('');
                                 $('.correctNotCorrect').eq(2).text('');
                             }
+                            function zeroToRandom(){
+                                var i=0;
+                            var positions=[];
+                            var RandomNumber=0;
+                            while(positions.length!=3){
+                            RandomNumber=Math.floor(Math.random()*3);
+                            while(positions.includes(RandomNumber) ){
+                            RandomNumber=Math.floor(Math.random()*3);
+                            }
+                            positions.push(RandomNumber);
+                            }
+                            return positions;
+                            }
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
