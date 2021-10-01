@@ -22,6 +22,19 @@ function getFlags(){
             }
             return positions;
             }
+            function setTheBoard(theFlags,thePositions){
+                var flag='',vector='';
+                for(var i=0;i<12;i++){
+                flag=theFlags[thePositions[i]];
+                vector=flag.split('/');
+                flag=vector[vector.length-1];
+                flag=flag.replace('Flag_of_','').replace('.png','');
+                $('.card').eq(i).find('img').eq(0).
+                attr('src',theFlags[thePositions[i]]);
+                $('.card').eq(i).find('img').eq(0).
+                attr('id',flag+'-'+i);
+                }
+            }         
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
 
