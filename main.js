@@ -217,6 +217,12 @@ function getFlags(){
                                     
                                     else{
                                     correctAnswers=correctAnswers+1;
+                                    if(correctAnswers!=12){
+                                        $('.correctNotCorrect').eq(indexDiv).text('Well done! \nkeep going');
+                                            }
+                                            else{
+                                                $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');       
+                                            }
                                     }
                                    
 
