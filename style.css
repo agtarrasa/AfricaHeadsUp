@@ -65,3 +65,7 @@
     color: blue;
     font-family: Font2;
 }
+@font-face {
+    font-family: Font2;
+    src: url('./font/SippinOnSunshine.otf');
+}
