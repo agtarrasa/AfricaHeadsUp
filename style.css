@@ -53,3 +53,7 @@
   .front-face {
     transform: rotateY(180deg);
   }
+  div#flagOptions {
+    visibility: hidden;
+    width: 0px;
+} 
