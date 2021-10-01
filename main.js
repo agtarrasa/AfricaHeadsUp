@@ -160,6 +160,11 @@ function getFlags(){
                             }
                             return positions;
                             }
+                            function fitSaoTome(country){
+                                if(country.indexOf('Sao')!=-1){
+                                    return 'Sao_Tome_<br>And_Prince';
+                                }else{return country;}
+                                }
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
