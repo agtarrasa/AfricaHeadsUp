@@ -41,7 +41,7 @@ function getFlags(){
                 return cardsRotated;   
                }
                function RotateCard() {
-                var chosenCountry='';
+                var chosenCountry='', cardNumber=0;
                 if(getRotated()==0){
                     console.log('rotate this card');
                     chosenCountry=$(this).find('img').attr('id');
