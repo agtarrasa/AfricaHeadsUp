@@ -116,6 +116,14 @@ function getFlags(){
 
                         }
                         }
+                        function cleanRadios(cardNumber){
+                            var card=$('#'+'optionscard-'+cardNumber);
+                            var options=card.find('input').length;
+                            var i=0;
+                            for(i=0;i<options;i++){
+                            card.find('input')[i].checked=false;
+                            }
+                            }
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
