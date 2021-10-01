@@ -22,5 +22,6 @@ function getFlags(){
             }
             return positions;
             }
-    theFlags=getFlags(); 
+    var theFlags=getFlags(); 
+    var thePositions= getRandomPositions();
 
