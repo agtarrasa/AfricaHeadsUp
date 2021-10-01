@@ -183,6 +183,8 @@ function getFlags(){
 
                                     var correctCountry=countryForRotatedCard();
                                     var miliseconds=1300;
+                                    var indexDiv=Math.floor(cardNumber/4);
+
 
 
 
@@ -192,6 +194,8 @@ function getFlags(){
                                     console.log('number card '+cardNumber);
                                     console.log('name country rotated card '+correctCountry);
                                     console.log('miliss '+miliseconds);
+                                    console.log('div index '+indexDiv);    
+
 
 
 
