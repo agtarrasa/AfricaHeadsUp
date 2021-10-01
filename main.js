@@ -50,4 +50,5 @@ function getFlags(){
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
+    const board = document.querySelectorAll('.card');
 
