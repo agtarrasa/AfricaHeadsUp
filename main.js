@@ -177,7 +177,11 @@ function getFlags(){
                                 }
                                 $('body').on('click','.radioBtn',function(){
                                     var countryClicked=$(this).attr('value');
-                                console.log('pais clickeado '+countryClicked);
+                                    var idParent=$(this).parent().parent().attr('id');
+
+                                console.log('clicked country '+countryClicked);
+                                console.log('parent id '+idParent);
+
                                 });
 
     var theFlags=getFlags(); 
