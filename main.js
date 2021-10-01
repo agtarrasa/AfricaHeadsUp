@@ -9,5 +9,18 @@ function getFlags(){
     }
     return flagS;
     }
+    function getRandomPositions(){
+        var i=0;
+        var positions=[];
+        var RandomNumber=0;
+            while(positions.length!=12){
+            RandomNumber=Math.floor(Math.random()*12);
+            while(positions.includes(RandomNumber) ){
+            RandomNumber=Math.floor(Math.random()*12);
+            }
+            positions.push(RandomNumber);
+            }
+            return positions;
+            }
     theFlags=getFlags(); 
 
