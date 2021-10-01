@@ -175,6 +175,10 @@ function getFlags(){
                                     return 'Sao_Tome_<br>And_Prince';
                                 }else{return country;}
                                 }
+                                $('body').on('click','.radioBtn',function(){
+                                    var countryClicked=$(this).attr('value');
+                                console.log('pais clickeado '+countryClicked);
+                                });
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
