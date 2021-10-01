@@ -69,3 +69,9 @@
     font-family: Font2;
     src: url('./font/SippinOnSunshine.otf');
 }
+label {
+    color: darkorange;
+    font-family: laFuente2;
+    font-size: 13pt;
+    font-weight: bold;
+} 
