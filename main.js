@@ -182,6 +182,8 @@ function getFlags(){
                                     cardNumber=parseInt(cardNumber);
 
                                     var correctCountry=countryForRotatedCard();
+                                    var miliseconds=1300;
+
 
 
                                     console.log('pais clickeado '+countryClicked);
@@ -189,6 +191,8 @@ function getFlags(){
                                     console.log('parent id '+idParent);
                                     console.log('number card '+cardNumber);
                                     console.log('name country rotated card '+correctCountry);
+                                    console.log('miliss '+miliseconds);
+
 
 
 
