@@ -69,7 +69,10 @@ function getFlags(){
                         
                         $('#'+'optionscard-'+cardNumber).find('input').eq(0).attr('value',tmpOptions[0]);                
                         $('#'+'optionscard-'+cardNumber).find('input').eq(1).attr('value',tmpOptions[1]);                
-                        $('#'+'optionscard-'+cardNumber).find('input').eq(2).attr('value',tmpOptions[2]);   
+                        $('#'+'optionscard-'+cardNumber).find('input').eq(2).attr('value',tmpOptions[2]);
+                        
+                        cleanRadios(cardNumber);
+
 
                     
 
