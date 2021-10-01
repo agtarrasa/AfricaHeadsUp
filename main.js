@@ -44,6 +44,7 @@ function getFlags(){
                 var chosenCountry='', cardNumber=0, cardOptions='',randomIndex='';
                 var tmpOptions=[];
                 if(getRotated()==0){
+                    cleanDivAnswers();
                     console.log('rotate this card');
                     chosenCountry=$(this).find('img').attr('id');
                     console.log('picked country '+chosenCountry);
@@ -221,11 +222,14 @@ function getFlags(){
                                         $('.correctNotCorrect').eq(indexDiv).text('Well done! \nkeep going');
                                             }
                                             else{
-                                                $('.correctNotCorrect').eq(indexDiv).text('acertaste!!!');       
+                                                $('.correctNotCorrect').eq(indexDiv).text('Well done!!!'); 
+                                                $('.correctNotCorrect').eq(indexDiv).text('CONGRATULATIONS');       
+      
                                             }
                                             setTimeout(()=>{
                                                 $('[class="card rotate"]').css('visibility','hidden');
                                             coverCard();
+                                            if(correctAnswers==12){document.location.reload();}
                                             },miliseconds);  
                                     }
                                    
