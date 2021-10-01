@@ -204,6 +204,11 @@ function getFlags(){
                                             }else{
                                             $('.correctNotCorrect').eq(indexDiv).
                                             text('You failed :(');}
+                                            setTimeout(()=>{
+                                                coverCard();
+                                                if(twoErrors(errorAnswers)==true){                                                document.location.reload();
+                                                }},miliseconds);
+
                                     
                                     
                                     
