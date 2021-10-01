@@ -198,6 +198,14 @@ function getFlags(){
                                     country=country.split('Flag_of_')[1].replace('.png','');
                                         return country;
                                         }
+                                        function vectorError(){
+                                            errors=[];
+                                           var i=0;
+                                           for(i=0;i<12;i++){errors.push(0);}
+                                            return errors;
+                                        }
+                               
+
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
