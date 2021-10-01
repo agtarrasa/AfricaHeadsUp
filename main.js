@@ -40,6 +40,13 @@ function getFlags(){
                 $('div[class="card rotate"]').length;
                 return cardsRotated;   
                }
+               function RotateCard() {
+                var chosenCountry='';
+                if(getRotated()==0){
+
+                }
+
+               }
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
