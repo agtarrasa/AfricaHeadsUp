@@ -63,6 +63,9 @@ function getFlags(){
                         tmpOptions.push(cardOptions[randomIndex[1]]);
                         tmpOptions.push(cardOptions[randomIndex[2]]);
                         console.log('opciones tmp '+tmpOptions);
+                        $('#'+'optionscard-'+cardNumber).find('label').eq(0).html(fitSaoTome(tmpOptions[0]));
+                        $('#'+'optionscard-'+cardNumber).find('label').eq(1).html(fitSaoTome(tmpOptions[1]));
+                        $('#'+'optionscard-'+cardNumber).find('label').eq(2).html(fitSaoTome(tmpOptions[2]));
 
                     
 
