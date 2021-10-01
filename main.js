@@ -95,4 +95,5 @@ function getFlags(){
     const board = document.querySelectorAll('.card');
     board.forEach(card => 
         card.addEventListener('click', RotateCard));
+    var theOptions = optionMatrix(theFlags); 
 
