@@ -181,13 +181,23 @@ function getFlags(){
                                     var cardNumber=idParent.split('-')[1];
                                     cardNumber=parseInt(cardNumber);
 
+                                    var correctCountry=countryForRotatedCard();
+
+
                                     console.log('pais clickeado '+countryClicked);
 
                                     console.log('parent id '+idParent);
-                                    console.log('numero carta '+cardNumber);
+                                    console.log('number card '+cardNumber);
+                                    console.log('name country rotated card '+correctCountry);
+
 
 
                                 });
+                                function countryForRotatedCard(){
+                                    var country=$('[class="card rotate"]').find('img').attr('src');
+                                    country=country.split('Flag_of_')[1].replace('.png','');
+                                        return country;
+                                        }
 
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
