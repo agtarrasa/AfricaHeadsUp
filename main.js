@@ -197,7 +197,20 @@ function getFlags(){
                                     console.log('div index '+indexDiv);
                                     if(countryClicked!=correctCountry){
                                         errorAnswers[cardNumber]=errorAnswers[cardNumber]+1;
-                                    }else{
+                                        if(twoErrors(errorAnswers)==true){
+                                            $('.correctNotCorrect').eq(indexDiv).
+                                            text('You have failed 2 times, \n try again');
+                                            miliseconds=900;
+                                            }else{
+                                            $('.correctNotCorrect').eq(indexDiv).
+                                            text('You failed :(');}
+                                    
+                                    
+                                    
+                                    }
+                                    
+                                    
+                                    else{
                                     correctAnswers=correctAnswers+1;
                                     }
                                    
@@ -229,6 +242,9 @@ function getFlags(){
                                         }
                                     return err0rs;
                                     }
+                                    function coverCard(){     
+                                        $('div[class="card rotate"]').eq(0).attr('class','card');
+                                        } 
                                
 
 
