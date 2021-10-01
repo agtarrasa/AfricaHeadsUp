@@ -34,7 +34,12 @@ function getFlags(){
                 $('.card').eq(i).find('img').eq(0).
                 attr('id',flag+'-'+i);
                 }
-            }         
+            }
+            function getRotated(){
+                var cardsRotated=
+                $('div[class="card rotate"]').length;
+                return cardsRotated;   
+               }
     var theFlags=getFlags(); 
     var thePositions= getRandomPositions();
     setTheBoard(theFlags,thePositions);
