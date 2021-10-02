@@ -7,11 +7,11 @@
   body {
     height: 100vh;
     display: flex;
-    background: cadetblue;/*color fondo*/
+    background: cadetblue;
   }
 
   .board {
-    width: 640px;
+    width: 1200px;
     height: 650px;
     margin: auto;
     display: flex;
@@ -75,3 +75,13 @@ label {
     font-size: 13pt;
     font-weight: bold;
 } 
+
+.info {
+    color:black;
+    position: relative;
+    left:2px;
+    top: 70px;
+    font-family: Font2;
+    font-size: large;
+}
+
